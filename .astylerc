@@ -1,0 +1,39 @@
+################################################################################
+#.astlerc for use with Artistic Style 2
+# Author: A. Ian Chen
+# Version: 0.0.2
+# Updated: 2014-12-02
+#
+# A set of default options flags to use for a generic project.
+# See: http://astyle.sourceforge.net/astyle.html for more flags.
+# To run recursively on a project:
+# > astyle --recursive  /<project>/*.cpp  /<project>/*.h
+################################################################################
+
+style=stroustrup            # Brackets are attached to everything but functions
+indent=spaces=4             # A reasonable even size
+convert-tabs                # For uniformity use only spaces
+pad-oper                    # Space around operands
+pad-header                  # Space around () after if, while, ...
+unpad-paren                 # No other extra padding
+suffix=none                 # Assuming version control 
+fill-empty-lines            # To help with keeping track of scope
+align-pointer=name          # 
+max-instatement-indent=40   # To keep line length reasonable
+
+## Project specific configurations
+## ROOT code formatting style
+# style=stroustrup
+# mode=c
+# align-pointer=name
+# indent=spaces=3
+# indent-switches
+# indent-cases
+# indent-namespaces
+# max-instatement-indent=40
+# indent-preprocessor
+# convert-tabs
+# brackets=linux
+# pad-header
+# pad-oper
+# unpad-paren
